@@ -25,6 +25,17 @@
     color: #fff;
 }
 
+/*social*/
+.social {
+    padding-top: 30px;
+
+}
+
+
+.social i {
+    margin-left: 20px;
+}
+
 html {
     font-size: 62.5%;
     overflow-x: hidden;
@@ -271,6 +282,7 @@ section {
     margin: 1.5rem;
     display: inline-block;
 }
+
 .about .row .box .container {
     display: flex;
     align-items: center;
@@ -281,6 +293,7 @@ section {
     gap: 2rem;
 
 }
+
 .about .row .box .container2 {
     display: flex;
     align-items: center;
@@ -302,8 +315,10 @@ section {
     /*dejar espacio entre los elementos*/
     gap: 2rem;
     padding-top: 20px;
+   
 
 }
+
 .about .row .box .container4 {
     display: flex;
     align-items: center;
@@ -316,6 +331,7 @@ section {
     margin-bottom: 10px;
 
 }
+
 .about .row .box .title {
     color: var(--primary-text-color);
     font-size: 2.5rem;
@@ -326,7 +342,7 @@ section {
 
 .about .row .box .exp-box .text {
     color: var(--primary-text-color);
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     padding: 1rem 0;
 }
 
@@ -352,7 +368,7 @@ section {
 
 .about .row .box .exp-box p {
     color: rgb(126, 47, 253);
-    font-size: 1.5rem;
+    font-size: 2rem;
     padding: 1rem 0;
 }
 
@@ -369,6 +385,7 @@ section {
 
 
 /*valors*/
+
 
 .valors .box-container {
     display: flex;
@@ -410,7 +427,7 @@ section {
 }
 
 .valors .box-container .box p {
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: var(--secondary-text-color);
     padding: 1rem;
 }
@@ -428,8 +445,6 @@ section {
     opacity: .1;
     transition: .3s;
 }
-
-
 
 
 .portfolio .button-container .btn {
@@ -487,7 +502,11 @@ section {
     color: var(--primary-text-color);
 }
 
-
+.portfolio .image-container .box .info span {
+    font-size: 1.5rem;
+    color: var(--secondary-text-color);
+    text-align: center;
+}
 
 .contact .row {
     display: flex;
@@ -682,9 +701,9 @@ section {
         width: 100%;
     }
 
-    .container{
+    .container {
         display: inline-block;
     }
- 
-     
+
+
 }
