@@ -332,18 +332,34 @@ section {
 
 }
 
+.about .row .box .container5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    justify-items: auto;
+    /*dejar espacio entre los elementos*/
+    gap: 2rem;
+    padding-top: 20px;
+
+
+}
+
 .about .row .box .title {
     color: var(--primary-text-color);
     font-size: 2.5rem;
     padding: 1rem 0;
 }
 
-
+section{
+    margin-bottom: 10px;
+}
 
 .about .row .box .exp-box .text {
     color: var(--primary-text-color);
     font-size: 1.7rem;
     padding: 1rem 0;
+ 
 }
 
 .about .row .box .exp-box .link {
@@ -633,6 +649,24 @@ section {
     border-radius: 5px;
 }
 
+.social-icons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .social-icons li {
+    margin: 0 10px;
+  }
+  
+  .social-icons a {
+    text-decoration: none;
+    color: var(--main-color);
+  }
+
 #theme-toggler {
     position: fixed;
     top: 8.5rem;
@@ -701,9 +735,86 @@ section {
         width: 100%;
     }
 
-    .container {
-        display: inline-block;
+
+} 
+
+
+.container-about {
+    width: 90%;
+    max-width: 900px;
+    border-radius: .5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    margin-bottom: 20px;
+    background: var(--primary-bg-color);
+}
+
+.section-about {
+    margin: 20px;
+}
+
+.title-about {
+    color: var(--primary-text-color);
+    font-size: 4rem;
+    margin-left: 20px;
+    padding-top: 20px;
+}
+
+.experience-title{
+    color:var(--main-color);
+}
+
+.education-title{
+    color:var(--main-color);
+}
+
+.formation-title{
+    color:var(--main-color);
+}
+
+.img-about{
+    display: inline-block;
+    text-align: center;
+    padding-left: 20px;
+}
+
+
+.experience-about {
+    font-size: 2rem;
+    color: var(--secondary-text-color);
+    margin-left: 20px;
+    padding-top: 20px;
+    
+}
+
+
+.education-about {
+    font-size: 2rem;
+    color: var(--secondary-text-color);
+    margin-left: 20px;
+    padding-top: 20px;
+}
+
+.formation-about {
+    font-size: 2rem;
+    color: var(--secondary-text-color);
+    margin-left: 20px;
+    padding-top: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    .container-about {
+        width: 90%; /* Puedes ajustar el ancho según tus preferencias */
+        max-width: none; /* Elimina el ancho máximo si es necesario */
     }
 
+    .title-about {
+        font-size: 3rem; /* Ajusta el tamaño de la fuente para pantallas más pequeñas */
+    }
 
+    .experience-about,
+    .education-about,
+    .formation-about {
+        font-size: 1.5rem; /* Ajusta el tamaño de la fuente para pantallas más pequeñas */
+    }
 }
