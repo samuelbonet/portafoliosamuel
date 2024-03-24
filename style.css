@@ -520,7 +520,7 @@ section{
 
 .portfolio .image-container .box .info h3 {
     font-size: 2.5rem;
-    color: var(--secondary-text-color);
+    color: var(--primary-text-color);
 }
 
 .portfolio .image-container .box .info span {
@@ -529,9 +529,6 @@ section{
     text-align: center;
 }
 
-.title-repo{
-    color: var(--secondary-text-color);
-}
 
 .contact .row {
     display: flex;
@@ -762,11 +759,35 @@ section{
     margin: auto;
     margin-bottom: 20px;
     background: var(--primary-bg-color);
+    overflow-x: auto; 
+}
+
+
+.container-about::-webkit-scrollbar {
+    background-color: var(--secondaty-text-color); 
+}
+
+.container-about::-webkit-scrollbar-thumb {
+    background-color: var(--main-color); 
 }
 
 .section-about {
-    margin: 20px;
+    padding: 20px; 
 }
+
+.img-about {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.img-about img {
+    max-width: 100%; 
+    height: auto;
+    margin: 5px; 
+}
+
+
 
 .title-about {
     color: var(--primary-text-color);
