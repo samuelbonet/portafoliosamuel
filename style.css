@@ -28,12 +28,14 @@
 /*social*/
 .social {
     padding-top: 30px;
-
+    
 }
 
 
 .social i {
     margin-left: 20px;
+    color: var(--primary-text-color);
+    font-size:48px;
 }
 
 html {
@@ -125,7 +127,7 @@ section {
 }
 
 .heading span {
-    color: var(--main-color);
+
     text-transform: uppercase;
 
 }
@@ -263,6 +265,7 @@ section {
     color: var(--secondary-text-color);
     font-size: 2rem;
 }
+
 
 /*about me*/
 
@@ -439,7 +442,7 @@ section{
 
 .valors .box-container .box h3 {
     font-size: 2rem;
-    color: var(--main-color);
+    color: var(--primary-text-color);
 }
 
 .valors .box-container .box p {
@@ -501,6 +504,7 @@ section{
     height: 100%;
     width: 100%;
     background: var(--primary-bg-color);
+    color: var(--secondary-text-color);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -511,17 +515,22 @@ section{
 
 .portfolio .image-container .box:hover .info {
     transform: scale(1);
+    color: var(--secondary-text-color);
 }
 
 .portfolio .image-container .box .info h3 {
     font-size: 2.5rem;
-    color: var(--primary-text-color);
+    color: var(--secondary-text-color);
 }
 
 .portfolio .image-container .box .info span {
     font-size: 1.5rem;
     color: var(--secondary-text-color);
     text-align: center;
+}
+
+.title-repo{
+    color: var(--secondary-text-color);
 }
 
 .contact .row {
@@ -664,7 +673,7 @@ section{
   
   .social-icons a {
     text-decoration: none;
-    color: var(--main-color);
+    color: var(--primary-text-color);
   }
 
 #theme-toggler {
@@ -738,6 +747,12 @@ section{
 
 } 
 
+@media (max-width: 768px) {
+    section {
+      margin-bottom: 100px; 
+    }
+}
+
 
 .container-about {
     width: 90%;
@@ -761,21 +776,27 @@ section{
 }
 
 .experience-title{
-    color:var(--main-color);
+    color: var(--primary-text-color);
 }
 
 .education-title{
-    color:var(--main-color);
+    color: var(--primary-text-color);
 }
 
 .formation-title{
-    color:var(--main-color);
+    color: var(--primary-text-color);
+}
+
+.formationlink{
+    color: var(--primary-text-color);
+    text-decoration: underline;
 }
 
 .img-about{
     display: inline-block;
     text-align: center;
-    padding-left: 20px;
+    white-space: nowrap;
+    margin-right: 10px;
 }
 
 
@@ -802,19 +823,4 @@ section{
     padding-top: 20px;
 }
 
-@media only screen and (max-width: 768px) {
-    .container-about {
-        width: 90%; /* Puedes ajustar el ancho según tus preferencias */
-        max-width: none; /* Elimina el ancho máximo si es necesario */
-    }
 
-    .title-about {
-        font-size: 3rem; /* Ajusta el tamaño de la fuente para pantallas más pequeñas */
-    }
-
-    .experience-about,
-    .education-about,
-    .formation-about {
-        font-size: 1.5rem; /* Ajusta el tamaño de la fuente para pantallas más pequeñas */
-    }
-}
