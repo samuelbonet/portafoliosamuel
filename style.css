@@ -231,11 +231,8 @@ section {
 
 .home .image img {
     height: 50rem;
-    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .3);
-    border-top: 3rem solid var(--primary-bg-color);
-    border-right: 3rem solid var(--primary-bg-color);
-    border-bottom: 3rem solid var(--main-color);
-    border-left: 3rem solid var(--main-color);
+ 
+
     border-radius: .5rem;
 }
 
@@ -257,7 +254,7 @@ section {
 }
 
 .home .content h3 span {
-    color: var(--main-color);
+    color: var(--primary-text-color);
 }
 
 .home .content p {
@@ -518,7 +515,7 @@ section{
     color: var(--secondary-text-color);
 }
 
-.portfolio .image-container .box .info h3 {
+.portfolio .image-container .box .info h3 span {
     font-size: 2.5rem;
     color: var(--primary-text-color);
 }
@@ -772,7 +769,8 @@ section{
 }
 
 .section-about {
-    padding: 20px; 
+    padding-left: 20px; 
+    padding-right: 20px;
 }
 
 .img-about {
