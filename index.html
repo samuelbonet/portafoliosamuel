@@ -362,6 +362,8 @@
     </div>
 
   </section>
+  
+ 
 
   <!-- jquery cdn link  -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -369,47 +371,17 @@
   <!-- custom js file link  -->
   <script src="script.js"></script>
 
-   <!-- jQuery CDN y archivo JS personalizado -->
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  
- 
-   <!-- Contador de visitas al final del body -->
-   <script>
-     // Función para incrementar y mostrar el contador de visitas
-     function mostrarContadorVisitas() {
-       // Verificar si LocalStorage es compatible con el navegador
-       if (typeof(Storage) !== "undefined") {
-         // Obtener el contador actual de visitas del LocalStorage
-         var visitas = localStorage.getItem("visitas");
- 
-         // Si es la primera vez que se carga la página, establecer el contador a 1
-         if (!visitas) {
-           visitas = 1;
-         } else {
-           // Incrementar el contador
-           visitas = parseInt(visitas) + 1;
-         }
- 
-         // Guardar el contador actualizado en el LocalStorage
-         localStorage.setItem("visitas", visitas);
- 
-         // Mostrar el contador de visitas en la página
-         var contadorElement = document.createElement("div");
-         contadorElement.style.textAlign = "center";
-         contadorElement.style.marginTop = "20px";
-         contadorElement.innerHTML = "Esta página ha sido visitada " + visitas + " veces.";
-         document.body.appendChild(contadorElement);
-       } else {
-         // Si LocalStorage no es compatible, mostrar un mensaje alternativo
-         console.log("LocalStorage no es compatible con este navegador.");
-       }
-     }
- 
-     // Llamar a la función al cargar la página
-     mostrarContadorVisitas();
-</script>
+  <div class="contador-container" style="text-align: center; margin-top: 0px;margin-bottom: 100px;">
+    <h2 class="title-about">Contador de visitas</h2><br>
+    <img src="https://counter4.optistats.ovh/private/contadorvisitasgratis.php?c=jgx5fbk6y75614x221tt33nc87knq6uj" border="0" title="contadores visitas gratis" alt="contadores visitas gratis">
+
+</div>
+
 </body>
 
+
+
+  
 <!-- footer section  -->
 <footer>
   <div class="footer">&copy; Samuel Bonet <br /><br />
