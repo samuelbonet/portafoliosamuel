@@ -840,36 +840,4 @@ section{
     padding-top: 20px;
 }
 
-.banner-link {
-    display: block; /* Asegura que el enlace abarque todo el banner */
-    text-decoration: none; /* Elimina el subrayado del enlace */
-}
-
-.banner-container {
-    width: 100%; /* Ocupa todo el ancho */
-    height: 100px; /* Altura pequeña */
-    background-color: #ffffff; /* Fondo oscuro */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px; /* Separación superior */
-    background-image: url('images/aws-banner.png'); /* Imagen de fondo para el banner */
-    background-size: cover; /* Asegura que la imagen cubra todo el banner */
-    color: rgb(0, 0, 0); /* Color del texto */
-}
-
-.banner-content {
-    text-align: center;
-    padding: 10px; /* Espaciado alrededor del texto */
-}
-
-.banner-content h2 {
-    margin: 0;
-    font-size: 24px;
-}
-
-.banner-content p {
-    margin: 5px 0 0;
-    font-size: 16px;
-}
 
